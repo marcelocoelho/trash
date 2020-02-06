@@ -47,7 +47,7 @@ A clear state machine helps users create a clear mental model of what your softw
 
 This makes it easier to prototype an interaction using your computer and then slowly adding to it a custom joystick and custom display.
 
-##Logic
+## Logic
 
 Every element in the game is an Object which encapsulates core data and provides some internal functionalities. Here are the main ones:
 
