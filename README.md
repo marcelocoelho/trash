@@ -1,30 +1,30 @@
 
-#1D Interface
+# 1D Interface
 
 A 1D Interface is a graphical user interface made from a single row of pixels and where it's NOT possible to display symbolic content (e.g. text, icons, etc).
 
  Its simplicity provides a great platform for learning some of the fundamental ideas behind interface design. 
 
-#Concepts
+# Concepts
 
-###Feedback
+### Feedback
 
 Similar to objects in the physical world, every user action causes a corresponding reaction or response from the interface. The opposite (e.g. the user presses a button and nothing happens) leads to confusing and the impression that something is broken. 
 
-###Spatial Mapping
+### Spatial Mapping
 
 Users naturally create a physical map in their mind of where interface elements are located (e.g. *the button on the left top corner closes the window*, or *the trash can is at the bottom right*). Once you've established spatial relationships, breaking them can confuse a user. However, they don't need to be simple. In the 1D game, the space is a continuous circle and the screen 'loops back': exiting on the right makes you re-enter on the left, and vice-versa.
 
-###Relationships
+### Relationships
 Establish relationships between elements using forms and colors consistenly. For example, when the purple player wins, the screen is filled with the color purple. 
 
 
-###States
+### States
 A clear state machine helps users create a clear mental model of what your software is doing. Feedback becomes predictable which makes an interface easier to use and  creates a better experience.
 
 
 
-#Instructions
+# Instructions
 
 1. If you haven't yet, download and install Processing.
 2. Download this game.
@@ -38,7 +38,7 @@ A clear state machine helps users create a clear mental model of what your softw
     * Press **R** for re-starting the game. 
 
 
-#Interface Architecture
+# Interface Architecture
 
 1D Interface separates:
 1. The interface structure (state machine, event listener, etc) from...
@@ -66,7 +66,7 @@ Most important object. Acts as the connection between all the other objects and 
 **DisplayBuffer**
 It's where we construct the image that shows up on screen. We build a frame at a time and then display it.
 
-##Input
+## Input
 Keyboard input is under Controller.pde
 
 ```java 
@@ -98,7 +98,7 @@ void keyPressed() {
 }
 ```
 
-##Output
+## Output
 
 Performed by DisplayBuffer.pde
 
@@ -120,7 +120,7 @@ And this method is the only piece of code that writes to the screen:
   } 
 ```
 
-##State Machine
+## State Machine
 
 Breaking your game logic into several states and connecting them into a state machine makes your code maintanable, testable, and scalable.
 
@@ -209,7 +209,7 @@ int nextFrame(int _animationSize) {
 } 
 ```
 
-#For Next Class...
+# For Next Class...
 
 You should spend some time trying a few things:
 
