@@ -175,7 +175,7 @@ To change states, we just need to update the gameState variable:
 gameState = "COLLISION";
 ```
 
-##Animations
+## Animations
 
 The collision animation is loaded from an animated GIF like this:
 
